@@ -15,7 +15,7 @@ module.exports = {
      config.plugins.push(new ForkTsCheckerWebpackPlugin());
    }
   
-  conf.module.rules.push({
+  config.module.rules.push({
   test: /\.svg$/,
   use: [
         {
