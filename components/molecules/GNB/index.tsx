@@ -19,7 +19,7 @@ export function GNB() {
       <S.Wrapper>
         <GitHub />
         {gnbs.map((gnb) => (
-          <GNBButton path={gnb.path} size="20" font={gnb.font} />
+          <GNBButton key={gnb.font} path={gnb.path} size="20" font={gnb.font} />
         ))}
         <Toggle />
       </S.Wrapper>

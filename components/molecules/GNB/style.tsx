@@ -4,7 +4,7 @@ import { darkBackground } from 'utils';
 export const Container = styled.header`
   width: 700px;
 
-  background-color: ${darkBackground};
+  background-color: inherit;
 
   padding: 10px 0;
 

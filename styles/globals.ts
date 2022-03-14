@@ -22,6 +22,12 @@ export const GlobalStyle = createGlobalStyle`
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+
+    body {
+        background-color: #fff;
+        visibility: hidden;
+    }
+
     button {
         background: none;
         padding: 0;
@@ -49,5 +55,17 @@ export const GlobalStyle = createGlobalStyle`
         ${media.mobile} {
             display: block;
         }
+    }
+
+    body.dark {
+        background-color: #232323;
+    }
+
+    body.dark .toggle-button-switch {
+        left: 23px;
+    }
+
+    body.dark .toggle-button-text {
+        background-color: #fc3164;
     }
 `;

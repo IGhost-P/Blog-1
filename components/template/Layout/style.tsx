@@ -9,13 +9,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: ${darkBackground};
-
-  /* visibility: hidden; */
 `;
 
 export const Wrapper = styled.section`
   width: 700px;
   height: 100%;
-  background: ${darkBackground};
+  background: inherit;
 `;

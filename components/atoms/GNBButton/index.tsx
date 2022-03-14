@@ -10,7 +10,7 @@ interface IGNBButtonProps {
 export function GNBButton({ path, size, font }: IGNBButtonProps) {
   return (
     <Link href={path}>
-      <S.Container isDark={true} size={size}>
+      <S.Container isDark={false} size={size}>
         {font}
       </S.Container>
     </Link>
