@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import * as S from './style';
+import { useTheme } from '../../../hooks/useTheme';
 
 interface IGNBButtonProps {
   path: string;
@@ -10,7 +11,7 @@ interface IGNBButtonProps {
 export function GNBButton({ path, size, font }: IGNBButtonProps) {
   return (
     <Link href={path}>
-      <S.Container isDark={false} size={size}>
+      <S.Container className="nav" size={size}>
         {font}
       </S.Container>
     </Link>

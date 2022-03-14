@@ -5,7 +5,7 @@ export function useTheme() {
 
   const initTheme = () => {
     let theme = localStorage.getItem('theme');
-    let { matches } = window.matchMedia('(prefers-color-scheme: dark)');
+    const { matches } = window.matchMedia('(prefers-color-scheme: dark)');
 
     if (!theme) {
       theme = matches ? 'dark' : 'light';
@@ -30,5 +30,7 @@ export function useTheme() {
     document.body.classList.toggle('dark');
   };
 
-  return { theme, onToggle, initTheme };
+  // const isDarkMode = theme === 'dark' ? true : false;
+
+  return { onToggle, initTheme };
 }

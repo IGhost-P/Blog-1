@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darkBackground } from 'utils';
+import { fontWhite } from 'utils';
 
 export const Container = styled.div`
   width: 100vw;
@@ -15,4 +15,6 @@ export const Wrapper = styled.section`
   width: 700px;
   height: 100%;
   background: inherit;
+
+  color: ${fontWhite};
 `;

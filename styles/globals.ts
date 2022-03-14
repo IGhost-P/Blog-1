@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { reset } from 'styled-reset';
 import { media } from 'styles/theme';
+import { fontDark, navDark } from 'utils';
 
 export const GlobalStyle = createGlobalStyle`
     ${reset}
@@ -67,5 +68,13 @@ export const GlobalStyle = createGlobalStyle`
 
     body.dark .toggle-button-text {
         background-color: #fc3164;
+    }
+
+    body.dark .nav {
+        color: ${navDark} 
+    }
+
+    body.dark section {
+        color: ${fontDark}
     }
 `;
