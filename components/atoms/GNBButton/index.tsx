@@ -6,12 +6,13 @@ interface IGNBButtonProps {
   path: string;
   size: string;
   font: string;
+  isTitle: boolean;
 }
 
-export function GNBButton({ path, size, font }: IGNBButtonProps) {
+export function GNBButton({ path, size, font, isTitle }: IGNBButtonProps) {
   return (
     <Link href={path}>
-      <S.Container className="nav" size={size}>
+      <S.Container className="nav" size={size} isTitle={isTitle}>
         {font}
       </S.Container>
     </Link>

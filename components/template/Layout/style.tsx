@@ -17,4 +17,6 @@ export const Wrapper = styled.section`
   background: inherit;
 
   color: ${fontWhite};
+
+  margin-top: 200px;
 `;

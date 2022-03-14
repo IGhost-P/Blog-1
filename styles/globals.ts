@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { reset } from 'styled-reset';
 import { media } from 'styles/theme';
-import { fontDark, navDark } from 'utils';
+import { fontDark, navDark, darkBackground } from 'utils';
 
 export const GlobalStyle = createGlobalStyle`
     ${reset}
@@ -59,6 +59,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body.dark {
+        background-color: #232323;
+    }
+
+    body.dark header {
         background-color: #232323;
     }
 

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { navWhite } from 'utils';
 
 interface IButtonProps {
+  isTitle: boolean;
   size: string;
 }
 
@@ -18,5 +19,5 @@ export const Container = styled.a<IButtonProps>`
   text-decoration: none;
   word-wrap: break-word;
 
-  margin-left: 15px;
+  margin-left: ${(props) => !props.isTitle && '15px'};
 `;
