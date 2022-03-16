@@ -11,11 +11,9 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.section`
-  width: 700px;
+  max-width: 700px;
   height: 100%;
   background: inherit;
 
   color: ${fontWhite};
-
-  margin-top: 100px;
 `;

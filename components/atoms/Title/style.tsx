@@ -8,7 +8,7 @@ export const Title = styled.h1`
   color: ${titleWhite};
   cursor: pointer;
   font-family: Montserrat, sans-serif;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 900;
   line-height: 30.8px;
   text-decoration: none;

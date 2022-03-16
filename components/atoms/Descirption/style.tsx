@@ -8,4 +8,5 @@ export const Descript = styled.p`
   margin: 0 0 1.75rem;
   padding: 0;
   word-wrap: break-word;
+  font-size: 15px;
 `;

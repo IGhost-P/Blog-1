@@ -7,4 +7,8 @@ export const Info = styled.small`
   font-size: 80%;
   line-height: 22.4px;
   word-wrap: break-word;
+  font-size: 12px;
+  &:first-child {
+    margin-right: 10px;
+  }
 `;

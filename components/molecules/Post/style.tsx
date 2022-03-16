@@ -5,6 +5,10 @@ export const Container = styled.article`
 
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 `;

@@ -15,7 +15,7 @@ const DUMMY_POST: Array<IDataProps> = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     date: '2022-02-11',
-    min: '20min',
+    min: '☕️☕️☕️ 20 min',
   },
   {
     slug: 'getting-started-with-nextjs',
@@ -23,14 +23,14 @@ const DUMMY_POST: Array<IDataProps> = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     date: '2022-02-10',
-    min: '5min',
+    min: '☕️ 5 min',
   },
   {
     slug: 'vladimir-putin-has-already-won',
     title: 'Vladimir Putin Has Already Won, but Nobody Wants to Admit It',
     description: 'Russia is too big to fail.',
     date: '2022-03-10',
-    min: '6min',
+    min: '☕️ 6 min',
   },
   {
     slug: 'cornerstone-of-early-2000s-la-rotations',
@@ -38,7 +38,7 @@ const DUMMY_POST: Array<IDataProps> = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     date: '2022-04-10',
-    min: '10min',
+    min: '☕️☕️ 10 min',
   },
   {
     slug: 'what-tommy-lasorda-lived-and-loved-by',
@@ -46,7 +46,7 @@ const DUMMY_POST: Array<IDataProps> = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     date: '2022-02-10',
-    min: '11min',
+    min: '☕️☕️☕️ 11 min',
   },
   {
     slug: 'what-tommy-lasorda-lived-and-loved-by',
@@ -54,7 +54,7 @@ const DUMMY_POST: Array<IDataProps> = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     date: '2022-02-10',
-    min: '11min',
+    min: '☕️☕️☕️ 11 min',
   },
   {
     slug: 'what-tommy-lasorda-lived-and-loved-by',
@@ -62,7 +62,7 @@ const DUMMY_POST: Array<IDataProps> = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     date: '2022-02-10',
-    min: '11min',
+    min: '☕️☕️☕️ 11 min',
   },
   {
     slug: 'what-tommy-lasorda-lived-and-loved-by',
@@ -70,7 +70,7 @@ const DUMMY_POST: Array<IDataProps> = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     date: '2022-02-10',
-    min: '11min',
+    min: '☕️☕️☕️ 11 min',
   },
 ];
 

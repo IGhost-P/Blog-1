@@ -14,8 +14,10 @@ export function Post({ post }: { post: IDataProps }) {
   return (
     <S.Container>
       <Title slug={slug} title={title} />
-      <AdditionalInfo text={date} />
-      <AdditionalInfo text={min} />
+      <div>
+        <AdditionalInfo text={date} />
+        <AdditionalInfo text={min} />
+      </div>
       <Description description={description} />
     </S.Container>
   );
