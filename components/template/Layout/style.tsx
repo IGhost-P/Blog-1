@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.section`
-  max-width: 700px;
+  width: 700px;
   height: 100%;
   background: inherit;
 

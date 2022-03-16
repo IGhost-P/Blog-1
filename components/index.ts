@@ -10,6 +10,11 @@ export { Title } from 'components/atoms/Title';
 export { GNB } from 'components/molecules/GNB';
 export { Post } from 'components/molecules/Post';
 
+// organisms
+export { PostHeader } from 'components/organisms/PostHeader';
+export { PostContent } from 'components/organisms/PostContent';
+
 // template
 export { Blog } from 'components/template/Blog';
 export { Layout } from 'components/template/Layout';
+export { PostDetail } from 'components/template/PostDetail';

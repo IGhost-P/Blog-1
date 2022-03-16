@@ -5,7 +5,7 @@ export function Title({ slug, title }: { slug: string; title: string }) {
   const linkPath = `blog/${slug}`;
   return (
     <Link href={linkPath}>
-      <S.Title>{title}</S.Title>
+      <S.Title className="title">{title}</S.Title>
     </Link>
   );
 }

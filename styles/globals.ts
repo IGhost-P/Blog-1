@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { reset } from 'styled-reset';
 import { media } from 'styles/theme';
-import { fontDark, navDark, darkBackground } from 'utils';
+import { fontDark, navDark, titleDark } from 'utils';
 
 export const GlobalStyle = createGlobalStyle`
     ${reset}
@@ -79,6 +79,15 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body.dark section {
+        color: ${fontDark}
+    }
+
+    body.dark .title {
+        color: ${titleDark}
+    }
+
+    body.dark .description,
+    body.dark .info {
         color: ${fontDark}
     }
 `;
