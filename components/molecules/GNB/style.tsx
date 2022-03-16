@@ -15,6 +15,8 @@ export const Container = styled.header`
   align-items: center;
 
   transition: top 0.3s;
+
+  box-sizing: border-box;
 `;
 
 export const Wrapper = styled.nav`

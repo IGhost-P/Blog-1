@@ -3,7 +3,6 @@ import { fontWhite } from 'utils';
 
 export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -18,5 +17,5 @@ export const Wrapper = styled.section`
 
   color: ${fontWhite};
 
-  margin-top: 200px;
+  margin-top: 100px;
 `;
