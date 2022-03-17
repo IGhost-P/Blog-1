@@ -13,8 +13,8 @@ module.exports = {
    // Do not run type checking twice:
    if (dev && isServer) {
      config.plugins.push(new ForkTsCheckerWebpackPlugin());
-   }
-  
+   } 
+    
   config.module.rules.push({
   test: /\.svg$/,
   use: [

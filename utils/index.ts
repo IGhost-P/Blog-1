@@ -8,3 +8,5 @@ export {
   darkBackground,
   whiteBackground,
 } from 'utils/colors';
+
+// export { getAllPosts, getPostData } from 'utils/handlePosts';
