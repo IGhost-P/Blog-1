@@ -1,10 +1,21 @@
+import { AdditionalInfo } from 'components/atoms/AdditonalInfo';
 import Image from 'next/image';
+import { IPostProps } from 'types';
+import * as S from './style';
 
-export function PostHeader({ title, src }: { title: string; src: string }) {
+export function PostHeader({ post }: { post: IPostProps }) {
+  const { title, image, slug, date, min } = post;
+  const imagePath = `/images/posts/${slug}/${image}`;
   return (
-    <header>
+    <S.Container>
+      <div className="img-detail">
+        <Image src={imagePath} width={300} height={200} />
+      </div>
       <h1>{title}</h1>
-      <Image src={src} width={300} height={200} />
-    </header>
+      <div className="detail-wrapper">
+        <AdditionalInfo isDetail={true} text={date} />
+        <AdditionalInfo isDetail={true} text={min} />
+      </div>
+    </S.Container>
   );
 }

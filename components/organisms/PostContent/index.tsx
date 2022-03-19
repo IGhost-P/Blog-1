@@ -14,13 +14,16 @@ export function PostContent({ post }: { post: IPostProps }) {
           img: (image: any) => {
             console.log(image);
             return (
-              <Image
-                key={image.alt}
-                src={`/images/posts/${post.slug}/${image.src}`}
-                alt={image.alt}
-                width={600}
-                height={300}
-              />
+              <div className="img-detail">
+                <Image
+                  key={image.alt}
+                  className="detail"
+                  src={`/images/posts/${post.slug}/${image.src}`}
+                  alt={image.alt}
+                  width={600}
+                  height={300}
+                />
+              </div>
             );
           },
           code({ node, inline, className, children, ...props }) {
@@ -39,6 +42,11 @@ export function PostContent({ post }: { post: IPostProps }) {
               </code>
             );
           },
+          p: ({ node, ...props }) => <p className="detail" {...props} />,
+          small: ({ node, ...props }) => <small className="detail" {...props} />,
+          ul: ({ node, ...props }) => <ul className="detail" {...props} />,
+          h2: ({ node, ...props }) => <h2 className="detail" {...props} />,
+          h3: ({ node, ...props }) => <h3 className="detail" {...props} />,
         }}
       />
     </S.Container>

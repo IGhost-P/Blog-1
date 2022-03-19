@@ -7,5 +7,5 @@ export const Container = styled.article`
   justify-content: start;
   align-items: start;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 30px;
 `;

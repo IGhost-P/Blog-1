@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { reset } from 'styled-reset';
 import { media } from 'styles/theme';
-import { fontDark, navDark, titleDark } from 'utils';
+import { fontDark, navDark, titleDark, fontWhite, titleWhite } from 'utils';
 
 export const GlobalStyle = createGlobalStyle`
     ${reset}
@@ -90,4 +90,191 @@ export const GlobalStyle = createGlobalStyle`
     body.dark .info {
         color: ${fontDark}
     }
+
+    code {
+        background: #FFFAE1;
+        padding: 2px 5px;
+        border-radius: 5px;
+    }
+
+    body.dark code {
+        background: #282C35;
+    }
+
+    h1 {
+        color: ${fontWhite};
+        box-sizing: border-box;
+        font-family: Montserrat,sans-serif;
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 1.1;
+        padding: 0;
+        text-rendering: optimizelegibility;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+
+    body.dark h1 {
+        color: ${fontDark};
+    }
+
+    h2 {
+        color: ${fontWhite};
+        box-sizing: border-box;
+        font-family: Montserrat,sans-serif;
+        font-size: 2.2rem;
+        font-weight: 900;
+        line-height: 1.1;
+        padding: 0;
+        text-rendering: optimizelegibility;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+
+    h2.detail {
+        margin: 30px 0;
+    }
+
+    body.dark h2 {
+        color: ${fontDark};
+    }
+
+
+    h3 {
+        color: ${fontWhite};
+        box-sizing: border-box;
+        font-family: Montserrat,sans-serif;
+        font-size: 1.9rem;
+        font-weight: 900;
+        line-height: 1.1;
+        padding: 0;
+        text-rendering: optimizelegibility;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+
+    body.dark h3 {
+        color: ${fontDark};
+    }
+
+    h3.detail {
+        margin: 30px 0;
+    }
+
+    p.detail {
+        box-sizing: border-box;
+        font-family: Merriweather,Georgia,serif;
+        line-height: 28px;
+        margin: 0 0 1.75rem;
+        padding: 0;
+        word-break: keep-all;
+        word-wrap: break-word;
+        font-size: 1.5rem;
+    }
+
+    blockquote {
+        border-left: .32813rem solid ${titleWhite};
+        box-sizing: border-box;
+        
+        font-family: Merriweather,Georgia,serif;
+        font-size: 1.20112rem;
+        font-style: italic;
+        line-height: 1.75rem;
+        margin: 0 1.75rem 1.75rem -1.75rem;
+        opacity: .8;
+        padding: 0 0 0 1.42188rem;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+
+    body.dark blockquote {
+        border-left: .32813rem solid ${titleDark};
+    }
+
+    div.detail-wrapper {
+        margin-bottom: 20px;
+    }
+
+    ul.detail {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    ul.detail li {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    strong {
+        box-sizing: border-box;
+        font-family: Merriweather,Georgia,serif;
+        font-weight: 700;
+        line-height: 28px;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+    .img-detail {
+        width: 100%;
+        margin:30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 `;
+
+// blockquote {
+//   border-left: .32813rem solid rgba(255, 255, 255, .88);
+//   box-sizing: border-box;
+//   color: rgba(255, 255, 255, .88);
+//   font-family: Merriweather,Georgia,serif;
+//   font-size: 1.20112rem;
+//   font-style: italic;
+//   line-height: 1.75rem;
+//   margin: 0 1.75rem 1.75rem -1.75rem;
+//   opacity: .8;
+//   padding: 0 0 0 1.42188rem;
+//   word-break: keep-all;
+//   word-wrap: break-word;
+// }
+
+// @media only screen and (max-width: 480px) {
+//   blockquote {
+//     padding-left: 0.98438rem;
+//     margin-right: 0px;
+//     margin-left: -1.3125rem;
+//   }
+// }
+
+// blockquote p {
+//   box-sizing: inherit;
+//   color: rgba(255,255,255,.88);
+//   font-family: Merriweather,Georgia,serif;
+//   font-size: 19.2179px;
+//   font-style: italic;
+//   line-height: 28px;
+//   margin: 0 0 1.75rem;
+//   padding: 0;
+//   word-break: keep-all;
+//   word-wrap: break-word;
+// }
+
+// blockquote p:last-child {
+//   margin-bottom: 0;
+// }
+
+// blockquote p strong {
+//   box-sizing: inherit;
+//   color: rgba(255,255,255,.88);
+//   font-family: Merriweather,Georgia,serif;
+//   font-size: 19.2179px;
+//   font-style: italic;
+//   font-weight: 700;
+//   line-height: 28px;
+//   word-break: keep-all;
+//   word-wrap: break-word;
+// }

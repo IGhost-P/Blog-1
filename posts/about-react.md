@@ -4,7 +4,7 @@ title: 'About React'
 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 image: 'React.png'
 date: '2022-02-11'
-min: '☕️☕️☕️ 20 min'
+min: '☕️☕️☕️ 20 min read'
 isFeatured: true
 ---
 
@@ -28,11 +28,7 @@ In this article, we'll dive into the core concepts and features NextJS has to of
 - Image Optimization
 - Much More
 
-## File-based Routing
-
-![Create routes via your file + folder structure](Next.png)
-
-... More content ...
+### File-based Routing
 
 ```javascript
 function solution(N, stages) {
@@ -58,3 +54,14 @@ function solution(N, stages) {
     .map((res) => res[0]);
 }
 ```
+
+![Create routes via your file + folder structure](Next.png)
+
+안녕하세요 `hello`
+
+모든 국민은 법률이 정하는 바에 의하여 국가기관에 문서로 청원할 권리를 가진다. 형사피해자는 법률이 정하는 바에 의하여 당해 사건의 재판절차에서 진술할 수 있다.
+
+신체장애자 및 질병·노령 기타의 사유로 생활능력이 없는 국민은 법률이 정하는 바에 의하여 국가의 보호를 받는다. 모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다.
+
+> 안녕하새요
+> 반가워요
