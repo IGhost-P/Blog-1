@@ -8,5 +8,5 @@ export const Container = styled.section`
   align-items: center;
   flex-direction: column;
 
-  margin-top: 200px;
+  margin-top: 100px;
 `;

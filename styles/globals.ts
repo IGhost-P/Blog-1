@@ -225,6 +225,14 @@ export const GlobalStyle = createGlobalStyle`
         align-items: center;
         justify-content: center;
     }
+
+    body.dark .p-blog > a{
+        color: ${titleDark}
+    }
+
+    body.dark .p-blog {
+        color: rgba(255, 255, 255, 0.88);
+    }
 `;
 
 // blockquote {

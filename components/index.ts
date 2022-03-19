@@ -5,10 +5,13 @@ export { GNBButton } from 'components/atoms/GNBButton';
 export { AdditionalInfo } from 'components/atoms/AdditonalInfo';
 export { Description } from 'components/atoms/Descirption';
 export { Title } from 'components/atoms/Title';
+export { IntorduceImg } from 'components/atoms/IntroduceImg';
+export { IntroduceDes } from 'components/atoms/IntroduceDes';
 
 // molecules
 export { GNB } from 'components/molecules/GNB';
 export { Post } from 'components/molecules/Post';
+export { Introduce } from 'components/molecules/Introduce';
 
 // organisms
 export { PostHeader } from 'components/organisms/PostHeader';
