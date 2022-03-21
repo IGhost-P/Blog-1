@@ -17,6 +17,7 @@ export const Container = styled.header`
   transition: top 0.3s;
 
   box-sizing: border-box;
+  z-index: 9999999999;
 `;
 
 export const Wrapper = styled.nav`
