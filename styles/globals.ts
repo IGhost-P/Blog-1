@@ -12,6 +12,13 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar {
         display: none;
     }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        
+    }
+
     html{
         font-size: 11px;
         -webkit-text-size-adjust: none;
@@ -231,6 +238,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body.dark .p-blog {
+        color: rgba(255, 255, 255, 0.88);
+    }
+
+    body.dark footer {
         color: rgba(255, 255, 255, 0.88);
     }
 `;
