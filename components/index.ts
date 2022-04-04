@@ -19,5 +19,6 @@ export { PostContent } from 'components/organisms/PostContent';
 
 // template
 export { Blog } from 'components/template/Blog';
+export { Contact } from 'components/template/Contact';
 export { Layout } from 'components/template/Layout';
 export { PostDetail } from 'components/template/PostDetail';
