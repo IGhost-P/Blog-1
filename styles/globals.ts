@@ -244,56 +244,11 @@ export const GlobalStyle = createGlobalStyle`
     body.dark footer {
         color: rgba(255, 255, 255, 0.88);
     }
+
+    @media (max-width: 620px) { 
+
+        body.dark .toggle-button-switch  {
+            left: 20px;
+        }
+    }
 `;
-
-// blockquote {
-//   border-left: .32813rem solid rgba(255, 255, 255, .88);
-//   box-sizing: border-box;
-//   color: rgba(255, 255, 255, .88);
-//   font-family: Merriweather,Georgia,serif;
-//   font-size: 1.20112rem;
-//   font-style: italic;
-//   line-height: 1.75rem;
-//   margin: 0 1.75rem 1.75rem -1.75rem;
-//   opacity: .8;
-//   padding: 0 0 0 1.42188rem;
-//   word-break: keep-all;
-//   word-wrap: break-word;
-// }
-
-// @media only screen and (max-width: 480px) {
-//   blockquote {
-//     padding-left: 0.98438rem;
-//     margin-right: 0px;
-//     margin-left: -1.3125rem;
-//   }
-// }
-
-// blockquote p {
-//   box-sizing: inherit;
-//   color: rgba(255,255,255,.88);
-//   font-family: Merriweather,Georgia,serif;
-//   font-size: 19.2179px;
-//   font-style: italic;
-//   line-height: 28px;
-//   margin: 0 0 1.75rem;
-//   padding: 0;
-//   word-break: keep-all;
-//   word-wrap: break-word;
-// }
-
-// blockquote p:last-child {
-//   margin-bottom: 0;
-// }
-
-// blockquote p strong {
-//   box-sizing: inherit;
-//   color: rgba(255,255,255,.88);
-//   font-family: Merriweather,Georgia,serif;
-//   font-size: 19.2179px;
-//   font-style: italic;
-//   font-weight: 700;
-//   line-height: 28px;
-//   word-break: keep-all;
-//   word-wrap: break-word;
-// }

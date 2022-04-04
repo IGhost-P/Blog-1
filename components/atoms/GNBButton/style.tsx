@@ -20,4 +20,12 @@ export const Container = styled.a<IButtonProps>`
   word-wrap: break-word;
 
   margin-left: ${(props) => !props.isTitle && '15px'};
+
+  @media screen and (max-width: 620px) {
+    font-size: ${(props) => `calc(${props.size}px - 5px)`};
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: ${(props) => `calc(${props.size}px - 10px)`};
+  }
 `;
