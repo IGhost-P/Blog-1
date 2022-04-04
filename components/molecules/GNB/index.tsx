@@ -9,8 +9,8 @@ const gnbs = [
     font: 'Home',
   },
   {
-    path: '/blog',
-    font: 'Blog',
+    path: '/Contact',
+    font: 'Contact',
   },
 ];
 
@@ -26,7 +26,6 @@ export function GNB() {
     <S.Container ref={navRef}>
       <GNBButton path="/" size="25" font="Yeummy-sk" isTitle={true} />
       <S.Wrapper>
-        <GitHub />
         {gnbs.map((gnb) => (
           <GNBButton key={gnb.font} path={gnb.path} size="20" font={gnb.font} isTitle={false} />
         ))}
