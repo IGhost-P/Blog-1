@@ -30,10 +30,27 @@ export const Container = styled.div`
   & .toggle-button-text-off {
     width: 50%;
     height: 23px;
+
     color: #fff;
 
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (max-width: 620px) {
+    width: 38px;
+    height: 20px;
+
+    & .toggle-button-switch {
+      width: 15px;
+      height: 15px;
+    }
+
+    & .toggle-button-text-on,
+    & .toggle-button-text-off {
+      width: 18px;
+      height: 18px;
+    }
   }
 `;

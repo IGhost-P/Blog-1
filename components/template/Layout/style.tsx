@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { fontWhite } from 'utils';
-import { Post } from '../../molecules/Post/index';
 
 export const Container = styled.div`
   width: 100vw;
@@ -12,15 +11,23 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.section`
-  width: 700px;
+  width: 50%;
   height: 100%;
   background: inherit;
 
   color: ${fontWhite};
+
+  @media screen and (max-width: 1300px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 800px;
+  }
 `;
 
 export const Footer = styled.footer`
-  width: 700px;
+  width: 50%;
   height: 100%;
   background: inherit;
 
@@ -35,5 +42,9 @@ export const Footer = styled.footer`
 
   & div {
     margin: 10px 0;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 800px;
   }
 `;

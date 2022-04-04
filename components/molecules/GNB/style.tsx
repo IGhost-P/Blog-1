@@ -4,7 +4,7 @@ export const Container = styled.header`
   position: fixed;
   top: 0;
 
-  width: 700px;
+  width: 50%;
 
   background-color: #fff;
 
@@ -18,6 +18,14 @@ export const Container = styled.header`
 
   box-sizing: border-box;
   z-index: 9999999999;
+
+  @media screen and (max-width: 1300px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 800px;
+  }
 `;
 
 export const Wrapper = styled.nav`

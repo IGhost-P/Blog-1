@@ -13,4 +13,12 @@ export const Title = styled.h1`
   line-height: 30.8px;
   text-decoration: none;
   word-wrap: break-word;
+
+  @media screen and (max-width: 620px) {
+    font-size: 23px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
