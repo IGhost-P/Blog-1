@@ -16,6 +16,7 @@ export { Introduce } from 'components/molecules/Introduce';
 // organisms
 export { PostHeader } from 'components/organisms/PostHeader';
 export { PostContent } from 'components/organisms/PostContent';
+export { ContactForm } from 'components/organisms/ContactForm';
 
 // template
 export { Blog } from 'components/template/Blog';
