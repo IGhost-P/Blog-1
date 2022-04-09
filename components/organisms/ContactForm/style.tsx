@@ -34,6 +34,12 @@ export const Form = styled.form`
     transition: all 0.3s;
 
     border: 1px solid #333;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  }
+
+  & input:focus {
+    border-color: #51a7e8;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
   }
 
   & textarea {
@@ -44,6 +50,12 @@ export const Form = styled.form`
     color: #333;
 
     border: 1px solid #333;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  }
+
+  & textarea:focus {
+    border-color: #51a7e8;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
   }
 `;
 
