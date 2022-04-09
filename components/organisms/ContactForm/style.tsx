@@ -79,10 +79,7 @@ export const Button = styled.button`
   -webkit-box-pack: center;
   -webkit-tap-highlight-color: transparent;
   align-items: center;
-  background-color: #ff0080;
-  border: 1px solid #ff0080;
   border-radius: 5px;
-  color: #fff;
   cursor: pointer;
   display: flex;
   font-family: inherit;
@@ -94,6 +91,23 @@ export const Button = styled.button`
   transition-duration: 0.15s;
   transition-property: border-color, background, color, transform, box-shadow;
   transition-timing-function: ease;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
   left: 40%;
+
+  &.Submit {
+    background-color: #eee;
+  }
+
+  &.Sending {
+    background-color: #51a7e8;
+  }
+
+  &.Success {
+    background-color: #3dbf87;
+  }
+
+  &.Error {
+    background-color: #f44336;
+  }
 `;
