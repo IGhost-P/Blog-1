@@ -34,6 +34,8 @@ export const Footer = styled.footer`
   height: 100%;
   background: inherit;
 
+  margin-top: 50px;
+
   padding: 50px 0;
 
   display: flex;

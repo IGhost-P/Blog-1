@@ -4,6 +4,7 @@ export const Form = styled.form`
   margin-top: 4rem;
   margin-bottom: auto;
   display: border-box;
+  position: relative;
   & label {
     display: block;
     font-family: Montserrat, sans-serif;
@@ -70,4 +71,29 @@ export const Controls = styled.div`
 export const Control = styled.div`
   flex: 1;
   min-width: 10rem;
+`;
+
+export const Button = styled.button`
+  position: absolute;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-tap-highlight-color: transparent;
+  align-items: center;
+  background-color: #ff0080;
+  border: 1px solid #ff0080;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: 13.3333px;
+  height: 48px;
+  max-width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: border-color, background, color, transform, box-shadow;
+  transition-timing-function: ease;
+
+  left: 40%;
 `;
