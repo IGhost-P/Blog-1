@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Form = styled.form`
   margin-top: 4rem;
+  margin-bottom: auto;
   display: border-box;
   & label {
     display: block;

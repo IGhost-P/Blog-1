@@ -13,6 +13,10 @@ export const GlobalStyle = createGlobalStyle`
         display: none;
     }
 
+    ul, ol {
+        list-style: circle;
+    }
+
     a {
         text-decoration: none;
         color: inherit;

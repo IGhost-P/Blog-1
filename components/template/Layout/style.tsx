@@ -3,16 +3,17 @@ import { fontWhite } from 'utils';
 
 export const Container = styled.div`
   width: 100vw;
+  height: 100%;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 `;
 
 export const Wrapper = styled.section`
   width: 50%;
-  height: 100%;
+  min-height: 70%;
   background: inherit;
 
   color: ${fontWhite};
@@ -27,7 +28,9 @@ export const Wrapper = styled.section`
 `;
 
 export const Footer = styled.footer`
-  width: 50%;
+  align-self: flex-end;
+  bottom: 0;
+  width: 100%;
   height: 100%;
   background: inherit;
 
@@ -41,7 +44,7 @@ export const Footer = styled.footer`
   color: ${fontWhite};
 
   & div {
-    margin: 10px 0;
+    margin-top: 1rem;
   }
 
   @media screen and (min-width: 1600px) {
