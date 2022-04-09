@@ -9,7 +9,7 @@ const gnbs = [
     font: 'Home',
   },
   {
-    path: '/Contact',
+    path: '/contact',
     font: 'Contact',
   },
 ];

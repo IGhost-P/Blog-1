@@ -168,11 +168,19 @@ export const GlobalStyle = createGlobalStyle`
         margin: 30px 0;
     }
 
+        ul, ol {
+        list-style: circle;
+    }
+
+    li {
+        margin-left: 1rem;
+    }
+
     p.detail {
         box-sizing: border-box;
         font-family: Merriweather,Georgia,serif;
         line-height: 28px;
-        margin: 0 0 1.75rem;
+        margin: 1.75rem 0 ;
         padding: 0;
         word-break: keep-all;
         word-wrap: break-word;
