@@ -1,9 +1,14 @@
-import { PostDetail } from 'components';
+import { PostDetail, Utterances } from 'components';
 import { getPostData, getPostsFiles } from 'utils/handlePosts';
 import { IPostProps } from 'types';
 
 export default function PostDetailPage({ post }: { post: IPostProps }) {
-  return <PostDetail post={post} />;
+  return (
+    <>
+      <PostDetail post={post} />
+      <Utterances />
+    </>
+  );
 }
 
 export function getStaticProps({ params }: { params: { slug: string } }) {

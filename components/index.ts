@@ -7,6 +7,7 @@ export { Description } from 'components/atoms/Descirption';
 export { Title } from 'components/atoms/Title';
 export { IntorduceImg } from 'components/atoms/IntroduceImg';
 export { IntroduceDes } from 'components/atoms/IntroduceDes';
+export { Utterances } from 'components/atoms/Utterances';
 
 // molecules
 export { GNB } from 'components/molecules/GNB';

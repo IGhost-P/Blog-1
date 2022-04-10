@@ -12,7 +12,6 @@ export function PostContent({ post }: { post: IPostProps }) {
         children={post.content}
         components={{
           img: (image: any) => {
-            console.log(image);
             return (
               <div className="img-detail">
                 <Image
