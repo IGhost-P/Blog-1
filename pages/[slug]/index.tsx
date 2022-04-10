@@ -1,10 +1,16 @@
+import Head from 'next/head';
 import { PostDetail, Utterances } from 'components';
 import { getPostData, getPostsFiles } from 'utils/handlePosts';
 import { IPostProps } from 'types';
 
 export default function PostDetailPage({ post }: { post: IPostProps }) {
+  const { slug, description } = post;
   return (
     <>
+      <Head>
+        <title>{slug}</title>
+        <meta name="description" content={description} />
+      </Head>
       <PostDetail post={post} />
       <Utterances />
     </>
