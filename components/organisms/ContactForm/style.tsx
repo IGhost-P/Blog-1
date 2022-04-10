@@ -98,16 +98,28 @@ export const Button = styled.button`
   &.Submit {
     background-color: #eee;
   }
+  &.Submit:hover {
+    background-color: #dddddd;
+  }
 
   &.Sending {
-    background-color: #51a7e8;
+    background-color: #5ee6eb;
+  }
+  &.Sending:hover {
+    background-color: #56bbf1;
   }
 
   &.Success {
     background-color: #3dbf87;
   }
+  &.Success:hover {
+    background-color: #48c285;
+  }
 
   &.Error {
     background-color: #f44336;
+  }
+  &.Error:hover {
+    background-color: #d64424;
   }
 `;
