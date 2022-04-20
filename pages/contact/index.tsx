@@ -8,7 +8,7 @@ export default function ContactPage() {
         <title>Contact</title>
         <meta name="description" content="블로그가 마음에 드셨다면 연락주세요!" />
       </Head>
-      <Contact />;
+      <Contact />
     </>
   );
 }

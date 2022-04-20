@@ -48,8 +48,4 @@ export const Footer = styled.footer`
   & div {
     margin-top: 1rem;
   }
-
-  @media screen and (min-width: 1600px) {
-    width: 800px;
-  }
 `;
