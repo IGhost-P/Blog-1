@@ -15,7 +15,7 @@ async function apiHandler(req: NextApiRequest, res: NextApiResponse) {
     try {
       const newMessage = { id: {}, email, name, message };
 
-      const client = await MongoClient.connect(process.env.NEXT_PUBLIC_API_ROOT as string);
+      const client = await MongoClient.connect(process.env.API_ROOT as string);
       const db = client.db('blog');
 
       const result = await db.collection('contact').insertOne(newMessage);

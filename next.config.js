@@ -7,6 +7,9 @@ module.exports = {
   * Custom Webpack Config
   * https://nextjs.org/docs/api-reference/next.config.js/custom-webpack-config
   */
+ env: {
+    API_ROOT: "mongodb+srv://yeum:0523a0523a@cluster0.l4zp1.mongodb.net/blog?retryWrites=true&w=majority"
+ }, 
  webpack(config, options) {
    const { dev, isServer } = options;
 
