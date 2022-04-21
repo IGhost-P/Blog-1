@@ -4,7 +4,7 @@ import * as S from './style';
 export function IntorduceImg() {
   return (
     <S.Container>
-      <Image src={'/images/personal/yummy-sk.JPG'} width={50} height={50} />
+      <Image src={'/images/personal/yummy-sk.png'} width={50} height={50} />
     </S.Container>
   );
 }
