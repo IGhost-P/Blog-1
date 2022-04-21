@@ -1,7 +1,7 @@
 import { GNB } from 'components';
 import { useEffect } from 'react';
 import * as S from './style';
-import { useTheme, useNavScroll } from 'hooks';
+import { useTheme } from 'hooks';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const { initTheme } = useTheme();
