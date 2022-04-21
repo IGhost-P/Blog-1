@@ -27,7 +27,7 @@ class MyDocument extends Document {
           <meta property="og:site_name" content="yeummy-blog" />
           <meta property="og:title" content="염상권 블로그" />
           <meta property="og:description" content="매일 성장하는 개발자입니다." />
-          <meta property="og:image" content="../public/images/personal/yummy-sk.png" />
+          <meta property="og:image" content="../public/images/personal/og.png" />
           <meta property="og:url" content="https:yeummy-blog.com" />
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>
