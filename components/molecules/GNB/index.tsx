@@ -1,4 +1,4 @@
-import { GNBButton, GitHub, Toggle } from 'components';
+import { GNBButton, Toggle } from 'components';
 import * as S from './style';
 import { useEffect, useRef } from 'react';
 import { useNavScroll } from 'hooks';

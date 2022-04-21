@@ -1,5 +1,5 @@
-import * as S from './style';
 import { ContactForm } from 'components';
+import * as S from './style';
 
 export function Contact() {
   return (

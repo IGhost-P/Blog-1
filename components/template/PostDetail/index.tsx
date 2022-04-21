@@ -1,4 +1,4 @@
-import { PostHeader, PostContent, Utterances } from 'components';
+import { PostHeader, PostContent } from 'components';
 import { IPostProps } from 'types';
 import * as S from './style';
 
