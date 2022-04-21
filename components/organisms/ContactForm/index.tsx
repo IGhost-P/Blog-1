@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import * as S from './style';
 
 interface IInputs {
@@ -36,9 +36,12 @@ export function ContactForm() {
     setInputs({ ...inputs, [name]: value });
   };
 
+  const resetState = () => new Promise((resolve) => setTimeout(resolve, 2000));
+
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus('Sending');
+
     try {
       await _fetch({ newContact: inputs });
       setInputs({ name: '', email: '', message: '' });
@@ -46,16 +49,11 @@ export function ContactForm() {
     } catch (err: unknown) {
       console.error(err);
       setStatus('Error');
+    } finally {
+      await resetState();
+      setStatus('Submit');
     }
   }
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setStatus('Submit');
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, [status]);
 
   return (
     <S.Form onSubmit={onSubmit}>
