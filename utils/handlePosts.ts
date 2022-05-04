@@ -31,9 +31,3 @@ export function getAllPosts() {
     .map((postFile: string) => getPostData(postFile)) // 순회하면서 postFile 데이터를 가져온다.
     .sort((a: IPostProps, b: IPostProps) => (a.date > b.date ? -1 : 1));
 }
-
-// // export function getFeaturedPosts() {
-// //   const allPosts = getAllPosts();
-
-// //   return allPosts.filter((post) => post.isFeatured);
-// // }
