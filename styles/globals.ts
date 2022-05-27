@@ -13,10 +13,13 @@ export const GlobalStyle = createGlobalStyle`
         display: none;
     }
 
+    header {
+        margin-bottom: 50px;
+    }
+
     a {
         text-decoration: none;
         color: inherit;
-        
     }
 
     html{
@@ -176,7 +179,7 @@ export const GlobalStyle = createGlobalStyle`
         margin-left: 1rem;
     }
 
-    p.detail {
+    article p, p.detail {
         box-sizing: border-box;
         font-family: Merriweather,Georgia,serif;
         line-height: 28px;

@@ -2,7 +2,7 @@
 slug: 'ajax'
 title: 'Ajax'
 description: 'Ajax의 역사와 개념에 대해 알아봅니다.'
-image: 'ajax.png'
+image: 'ajax.svg'
 date: '2022-05-01'
 min: '☕️ 10 min read'
 isFeatured: true
@@ -12,7 +12,7 @@ isFeatured: true
 
 과거 웹사이트는 지금과는 달리 정적인 HTML만을 사용했으며, 페이지간 이동을 위해서 브라우저를 새로고침을 해야 했습니다.
 
-![traditional-webpage-lifecycle.png](1.png)
+![traditional-webpage-lifecycle.png](1.svg)
 
 즉, 거의 내용이 바뀌지 않는 페이지라도 모든 페이지를 다시 서버에게 요청한 후 페이지를 반영해야 했습니다.
 
@@ -85,7 +85,7 @@ isFeatured: true
 
 > Microsoft `ActiveXObject()` 를 Edge 브라우저에서 삭제되었으며, `XMLHttpRquest` 만 제공하게 되었습니다.
 
-![Google-Maps-Beta1.png](4.png)
+![Google-Maps-Beta1.png](4.svg)
 
 그렇게 그다지 주목받지 않았던 이 기술은 2005년 Google은 Gmail, Google Maps를 출시되면서 주목받기 시작했습니다.
 
@@ -105,7 +105,7 @@ isFeatured: true
 
 지금 우리가 알고 있듯이 AJAX는 이름과 같이 비동기적으로 목적지 서버와 통신한 후, 그에 의한 전송된 응답을 처리하는 기술을 말하기 위한 이름입니다.
 
-![ajax-webpage-lifecycle.png](5.png)
+![ajax-webpage-lifecycle.png](5.svg)
 
 AJAX의 A는 비동기를 의미하며, 비동기적으로 클라이언트와 **서버간 통신하는데 차단없이 상호작용 할 수 있기 때문에 페이지의 변화 시, 새로고침 없이 반영할 수 있습니다.**
 
@@ -119,7 +119,7 @@ AJAX의 A는 비동기를 의미하며, 비동기적으로 클라이언트와 **
 
 ## XMLHttpRequest 예시
 
-```jsx
+```js
 const xhr = new XMLHttpRequest(); // XMLHttpRequest 객체 생성
 
 xhr.open('GET', '/service'); // GET 요청
@@ -148,7 +148,7 @@ xhr.send();
 
 ## Fetch 예시
 
-```jsx
+```js
 fetch('/service', { method: 'GET' })
   .then((res) => res.json())
   .then((json) => console.log(json))
@@ -161,7 +161,7 @@ Fetch는 비교적 최근 2015년에 추가된 HTTP 요청 전송 기능을 제�
 
 이는 이벤트 기반인 `XMLHttpRequest` 와는 달리 ES6 부터 추가된 프로미스 기반으로 동작합니다.
 
-```jsx
+```js
 const getService = async () => {
   const res = await fetch("/service", { method: "GET" }),
     json = await res.json();
@@ -181,7 +181,7 @@ Fetch API의 경우에는 통신을 위한 HTTP 설정 인터페이스를 제공
 
 대표적으로 쿠키전송으로 꼽을 수 있는데, `XMLHttpRequest` 는 항상 브라우저 쿠키를 전송하지만 Fetch API는 매개 변수에 명시하지 않는 한 쿠키 전송을 하지 않습니다.
 
-```jsx
+```js
 const res = await fetch('/service', {
   method: 'GET',
   credentials: 'same-origin',
@@ -196,7 +196,7 @@ const res = await fetch('/service', {
 
 `XMLHttpRequest` 는 요청 진행 상황을 모니터링 할 수 있습니다.
 
-```jsx
+```js
 const xhr = new XMLHttpRequest();
 xhr.upload.onprogress = (p) => {
   // 현재 요청이 몇 퍼센트 진행되었는지 확인
@@ -210,7 +210,7 @@ xhr.upload.onprogress = (p) => {
 
 ### 요청 시간 초과 기능 지원
 
-```jsx
+```js
 const xhr = new XMLHttpRequest();
 xhr.timeout = 5000; // 최대 5초
 xhr.ontimeout = () => console.log('timeout');
@@ -218,7 +218,7 @@ xhr.ontimeout = () => console.log('timeout');
 
 `XMLHttpRequest` 의 경우, 요청을 허용하는 시간을 명시하는 `timeout` 인터페이스를 제공합니다.
 
-```jsx
+```js
 Promise.race([
   fetch('/service', { method: 'GET' }),
   new Promise((resolve) => setTimeout(resolve, 5000)),
@@ -229,7 +229,7 @@ Promise.race([
 
 ### 요청 중단 기능
 
-```jsx
+```js
 const xhr = new XMLHttpRequest();
 xhr.open('GET', '/service');
 xhr.send();
@@ -242,7 +242,7 @@ xhr.abort();
 
 Fetch도 `AbortController` 객체로 처리할 수 있지만, `XMLHttpRequest` 보다 간단하진 않습니다.
 
-```jsx
+```js
 const controller = new AbortController();
 fetch('/service', {
   method: 'GET',
