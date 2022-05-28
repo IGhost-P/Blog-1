@@ -32,17 +32,15 @@ const [, time, meridiem] = new Date(targetTime).toLocaleString('en-US').split(' 
 
 ## 2. 해결
 
-“ **[Some code only works while chrome debugger is active](https://stackoverflow.com/questions/35660278/some-code-only-works-while-chrome-debugger-is-active) “**이 글이 정말 많이 도움되었습니다.
+“[Some code only works while chrome debugger is active](https://stackoverflow.com/questions/35660278/some-code-only-works-while-chrome-debugger-is-active) “이 글이 정말 많이 도움되었습니다.
 
 그 이유는 우리가 Debug with chrome을 사용했을 때와 아닐때, 사용하는 엔진의 종류가 다르다는 것을 알게 되었습니다.
 
 일반적으로 애뮬레이터를 사용할 때 JavascriptCore 엔진을 사용한다고 합니다.
 
 > [JavascriptCore](https://developer.apple.com/documentation/javascriptcore)
-
-앱 내에서 JavaScript 프로그램을 평가하고 앱의 JavaScript 스크립팅을 지원합니다.
-
 >
+> 앱 내에서 JavaScript 프로그램을 평가하고 앱의 JavaScript 스크립팅을 지원합니다.
 
 그런데, 우리가 Debug with chrome을 사용하게 되면 JavascriptCore엔진이 아닌 V8엔진을 사용하게 됩니다.
 
