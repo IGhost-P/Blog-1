@@ -14,7 +14,7 @@ isFeatured: true
 
 ![스크린샷 2022-05-28 오후 11.44.27.png](1.svg)
 
-알아보니, new Date 객체로 변환하는 코드에서 에러가 발생하는 것을 볼 수 있었습니다.
+알아보니, new Date 객체로 변환하는 코드에서 에러가 발생하는 것을 발견하게 되었고,
 
 ```javascript
 const [, time, meridiem] = new Date(targetTime).toLocaleString('en-US').split(' ');
@@ -22,13 +22,13 @@ const [, time, meridiem] = new Date(targetTime).toLocaleString('en-US').split(' 
 // 여기에서 undefined를 반환하게 됩니다.
 ```
 
-그래서 이것 저것 알아보다.. 우연히 Debug with chorme을 키게 되었고 이 이후부터는 값이 정상적으로 나오는 것을 볼 수 있었습니다.
+이것 저것 알아보다.. Debug with chorme을 켠 이후에는 값이 정상적으로 나오는 것을 확인했습니다.
 
 ![스크린샷 2022-05-28 오후 11.48.53.png](2.svg)
 
-이 이후, Debug with chrome을 하니 깔끔하게 해결 되어 개발 할 때마다 Chrome을 키면서 개발하였고, 배포를 위해 테스를 하게 되었습니다.
+이후, Debug with chrome을 하니 깔끔하게 해결 되어 개발 할 때마다 Chrome을 키면서 개발하였고, 배포를 위해 테스트를 하게 되었습니다.
 
-하지만, 빌드된 앱은 Debug with chrome을 킬 수 없었기 때문에 앞서 겪었던 문제는 다시 원점으로 돌아오게 되었습니다..
+하지만, 빌드된 앱은 Debug with chrome과 함께 사용할 수 없었기 때문에 앞서 겪었던 문제는 다시 원점으로 돌아오게 되었습니다..
 
 ## 2. 해결
 
@@ -44,7 +44,7 @@ const [, time, meridiem] = new Date(targetTime).toLocaleString('en-US').split(' 
 
 그런데, 우리가 Debug with chrome을 사용하게 되면 JavascriptCore엔진이 아닌 V8엔진을 사용하게 됩니다.
 
-이 둘의 Date 객체의 경우 들어오는 값에 대에 지원하는 포멧이 조금 다른 것 같습니다.
+이 둘의 Date 객체의 경우 들어오는 값에 대해 지원하는 포멧이 조금 다른 것 같습니다.
 
 예를 들어, `new Date(2022-05-27)` 의 경우 V8엔진은 잘 처리하지만, JavascriptCore의 경우 `-` 으로 구분된 포멧을 잘 읽지 못하는듯 보입니다.
 
