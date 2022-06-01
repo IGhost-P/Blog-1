@@ -8,8 +8,6 @@ min: '☕️ 10 min read'
 isFeatured: true
 ---
 
-# React Router v6
-
 라우팅이란 페이지를 이동하는 것을 말한다.
 
 원래 SSR 같은 경우에는 페이지를 이동할 때마다 새로운 요청을 받아와야 하지만,
