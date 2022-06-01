@@ -24,7 +24,7 @@ SPA 경우에는 앱을 로드할 때 한 페이지에서 애플리케이션을 
 
 이는 화면 이동시, `<BrowserRouter>` 는 화면이 깜빡이지 않고 이동할 수 있도록 한다.
 
-```jsx
+```js
 ReactDOM.render(
   <BrowserRouter>
     <App />
@@ -37,7 +37,7 @@ ReactDOM.render(
 
 ## 2. Route, Routes
 
-```jsx
+```js
 <Route path="주소규칙" element={보여 줄 컴포넌트 JSX} />
 ```
 
@@ -45,7 +45,7 @@ ReactDOM.render(
 
 `App` 컴포넌트를 다음과 같이 `Route` 컴포넌트를 사용하여 라우트 설정은 다음과 같이 한다.
 
-```jsx
+```js
 import { Route, Routes } from 'react-router-dom';
 import Welcome from './components/Welcome';
 import Products from './components/Products';
@@ -62,11 +62,11 @@ function App() {
 
 ## 3. 다른 페이지로 이동하는 버튼 만들기 → Link
 
-```jsx
+```js
 <Link to="경로">링크 이름</Link>
 ```
 
-```jsx
+```js
 import { Link } from 'react-router-dom';
 
 export default function Header() {
@@ -97,7 +97,7 @@ NavLink는 일반적인 링크와 동일 → a를 생성하고 페이지가 다�
 
 추가적으로 활성화 되었을 때 클래스를 지정하면 특정 css를 반영할 수 있도록 해준다.
 
-```jsx
+```js
 import { NavLink } from 'react-router-dom';
 import classes from './Header.module.css';
 
@@ -129,7 +129,7 @@ export default function Header() {
 }
 ```
 
-```jsx
+```js
 <NavLink to="welcome" className={({ isActive }) => (isActive ? classes.active : undefined)}>
   Welcome
 </NavLink>
@@ -141,7 +141,7 @@ export default function Header() {
 
 ## 5. 동적 라우팅 처리하기
 
-```jsx
+```js
 function App() {
   return (
     <>
@@ -179,7 +179,7 @@ URL 파라미터는 `/profiles/:username` 과 같이 경로에 `:` 를 사�
 
 ## 6. Redirect
 
-```jsx
+```js
 function App() {
   return (
     <>
@@ -208,7 +208,7 @@ function App() {
 
 여기서 중요한 점은 공식문서에서 v6버전으로 업데이트하기 전 v5.1 버전으로 업데이트 하는 과정에서는 이런식으로 수정하라고 권유한다.
 
-```jsx
+```js
 // v5.1 전 사용방법
 <Rediect from="/freetime" to="/free/freetime" />// v5.1 업데이트 시 수정
 <Route path="/freetime" render={() => <Redirect to="/free/freetime" />} />
@@ -218,13 +218,13 @@ function App() {
 
 그리고 이런식으로 모두 마이그레이션이 됬다면 v6에서 지원하는 `Navigate` 컴포넌트를 사용하여 마이그레이션을 진행시켜주자.
 
-```jsx
+```js
 <Route path="/" element={<Navigate replace to="/welcome" />} />
 ```
 
 즉, 다음과 같이 처리하면 된다.
 
-```jsx
+```js
 function App() {
   return (
     <>
@@ -245,7 +245,7 @@ function App() {
 
 ## 7. 중첩라우팅 사용하기
 
-```jsx
+```js
 export default function App() {
   return (
     <Routes>
@@ -280,7 +280,7 @@ export default function App() {
 
 지금의 경우엔 다음 내용이 `Outlet` 컴포넌트를 통해서 보여지게 되는 것.
 
-```jsx
+```js
 import { Outlet } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
@@ -300,7 +300,7 @@ export default function QuoteDetail() {
 
 그리고 하위에 있는 경로들은 루트 경로에 맞게 생락할 수 있다.
 
-```jsx
+```js
 <Route path="/quotes/:quoteId" element={<QuoteDetail />}>
   <Route path="comments" element={<Comments />} />
 </Route>
@@ -308,7 +308,7 @@ export default function QuoteDetail() {
 
 ## 8. 404 처리하기
 
-```jsx
+```js
 export default function App() {
   return (
     <Layout>
@@ -338,7 +338,7 @@ React router dom은 위에서 부터 아래까지 순차적으로 훑어가면�
 
 이를 위해서는 `useNavigate()` 를 사용하면 된다.
 
-```jsx
+```js
 const navigate = useNavigate();
 
 navigate(-1); // 뒤로 가기
@@ -360,7 +360,7 @@ prompt는 페이지를 벗어나려고 할 때, 정말 이 페이지를 벗어�
 
 따라서, 다음과 같이 커스텀 하면 된다.
 
-```jsx
+```js
 import { useRef, useState, useContext, useEffect, useCallback } from 'react';
 import { UNSAFE_NavigationContext as NavigationContext } from 'react-router-dom';
 
