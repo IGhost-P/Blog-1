@@ -35,3 +35,4 @@
 3. [Ajax](https://www.yeummy-blog.com/ajax)
 4. [자바스크립트는 왜 프로토타입을 선택했을까?](https://www.yeummy-blog.com/why-js-choose-prototype)
 5. [react native Date:undefined 오류 해결](https://www.yeummy-blog.com/rn-date-undefined)
+6. [React Router v6](https://www.yeummy-blog.com/react-router-dom-v6)
